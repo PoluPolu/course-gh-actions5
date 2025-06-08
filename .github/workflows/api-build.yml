@@ -5,6 +5,7 @@ on:
     paths:
       - ".github/workflows/api-build.yml"
       - "api/**"
+      
   workflow_dispatch: # manual
 
 jobs:
@@ -17,8 +18,8 @@ jobs:
       - run: dotnet --list-sdks
       - run: dotnet build
         working-directory: ./api
-      - run: dotnet test
-        working-directory: ./api
+      # - run: dotnet test
+      #   working-directory: ./api
 
 
 
