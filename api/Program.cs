@@ -9,7 +9,7 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagge();
+    app.UseSwagger();
     app.UseSwaggerUI();
 }
 
